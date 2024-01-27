@@ -1,6 +1,6 @@
 import React from 'react';
-import Gallery from './pages/gallery';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Gallery from './pages/Gallery';
 import Index from './pages/Index';
 import Root from './pages/Root';
 import Modal from './components/Modal';
