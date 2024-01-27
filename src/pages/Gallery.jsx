@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { images } from '../data/dummy-data';
 import Modal from '../components/Modal';
 
@@ -14,13 +14,13 @@ const Gallery = () => {
   return (
     <div className="gallery">
       {images.map((image, index) => (
-        <div
-          key={index}
+        <button
+          key={image.id}
           className="gallery-item"
           onClick={() => viewImage(image)}
         >
           <img src={image.thumbnail} alt={`Thumbnail ${index + 1}`} />
-        </div>
+        </button>
       ))}
 
       <Modal />
