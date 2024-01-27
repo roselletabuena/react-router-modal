@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Gallery from './pages/gallery';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Index from './pages/Index';
