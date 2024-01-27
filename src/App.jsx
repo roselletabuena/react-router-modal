@@ -4,7 +4,6 @@ import Gallery from './pages/gallery';
 import Index from './pages/Index';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './pages/Root';
-import { useLocation } from 'react-router-dom';
 import Modal from './components/Modal';
 
 const router = createBrowserRouter([
@@ -19,10 +18,6 @@ const router = createBrowserRouter([
         children: [
           {
             path: ':id',
-            loader: () => {
-              console.log('data');
-              return 'data';
-            },
             element: <Modal />,
           },
         ],
