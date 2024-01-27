@@ -8,7 +8,7 @@ const Gallery = () => {
 
   const viewImage = (image) => {
     const id = image.id;
-    navigate('/gallery/' + id);
+    navigate('/view/' + id);
   };
 
   return (

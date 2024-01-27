@@ -15,7 +15,7 @@ const Modal = () => {
   }, [imageId]);
 
   const handleOnClose = () => {
-    navigate('/gallery');
+    navigate('/');
   };
 
   return (

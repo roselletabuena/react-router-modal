@@ -1,26 +1,15 @@
 import React from 'react';
-import './App.css';
 import Gallery from './pages/gallery';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Index from './pages/Index';
-import Root from './pages/Root';
-import Modal from './components/Modal';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Root />,
+    element: <Gallery />,
     children: [
-      { index: true, element: <Index /> },
       {
-        path: '/gallery',
-        element: <Gallery />,
-        children: [
-          {
-            path: ':id',
-            element: <Modal />,
-          },
-        ],
+        path: 'view/:id',
+        element: null,
       },
     ],
   },
