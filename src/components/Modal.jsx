@@ -6,7 +6,7 @@ const Modal = () => {
   const { id: imageId } = useParams();
   const navigate = useNavigate();
 
-  const [imageData, setImageData] = useState({});
+  const [imageData, setImageData] = useState(null);
 
   useEffect(() => {
     const image = images.find(({ id }) => imageId == id);
