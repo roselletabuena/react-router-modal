@@ -9,7 +9,6 @@ const Modal = () => {
   const [imageData, setImageData] = useState(null);
 
   useEffect(() => {
-    if (!imageId) return;
     const image = images.find(({ id }) => imageId == id);
 
     setImageData(image);
